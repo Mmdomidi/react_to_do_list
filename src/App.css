@@ -1,0 +1,117 @@
+/* تنظیمات کلی صفحه */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.App {
+  width: 400px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #333333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* فرم اضافه کردن کار جدید */
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 75%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  padding: 8px 12px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* لیست وظایف */
+.ToDoItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.ToDoItem span {
+  flex-grow: 1;
+  color: #333;
+  font-size: 16px;
+}
+
+.ToDoItem span.completed {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+/* دکمه‌های کارها */
+.ToDoItem button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* رنگ‌بندی دکمه‌ها */
+.ToDoItem button.complete {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.ToDoItem button.complete:hover {
+  background-color: #45a049;
+}
+
+.ToDoItem button.edit {
+  background-color: #2196F3;
+  color: white;
+}
+
+.ToDoItem button.edit:hover {
+  background-color: #1e88e5;
+}
+
+.ToDoItem button.delete {
+  background-color: #f44336;
+  color: white;
+}
+
+.ToDoItem button.delete:hover {
+  background-color: #e53935;
+}
